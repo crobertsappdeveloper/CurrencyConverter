@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rates"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <ImageView
+        android:id="@+id/USDimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/usd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/USDtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="USD"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/USDimage"
+        app:layout_constraintTop_toTopOf="@+id/USDimage" />
+
+    <TextView
+        android:id="@+id/USDtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="US Dollar"
+        app:layout_constraintStart_toStartOf="@+id/USDtitle"
+        app:layout_constraintTop_toBottomOf="@+id/USDtitle" />
+
+    <EditText
+        android:id="@+id/USDinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:inputType="numberDecimal|numberSigned"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/USDtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/USDtitle"
+        app:layout_constraintVertical_bias="0.692" />
+
+    <ImageView
+        android:id="@+id/EURimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/eur"
+        app:layout_constraintStart_toStartOf="@+id/USDimage"
+        app:layout_constraintTop_toBottomOf="@+id/USDimage" />
+
+    <TextView
+        android:id="@+id/EURtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EUR"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/USDtext"
+        app:layout_constraintTop_toTopOf="@+id/EURimage" />
+
+    <TextView
+        android:id="@+id/EURtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Euro"
+        app:layout_constraintStart_toStartOf="@+id/EURtitle"
+        app:layout_constraintTop_toBottomOf="@+id/EURtitle" />
+
+    <EditText
+        android:id="@+id/EURinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:inputType="numberDecimal|numberSigned"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/USDinput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/USDinput"
+        app:layout_constraintTop_toBottomOf="@+id/USDinput" />
+
+    <ImageView
+        android:id="@+id/SEKimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/sek"
+        app:layout_constraintStart_toStartOf="@+id/EURimage"
+        app:layout_constraintTop_toBottomOf="@+id/EURimage" />
+
+    <TextView
+        android:id="@+id/SEKtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEK"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/EURtext"
+        app:layout_constraintTop_toTopOf="@+id/SEKimage" />
+
+    <TextView
+        android:id="@+id/SEKtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Swedish Krona"
+        app:layout_constraintStart_toStartOf="@+id/SEKtitle"
+        app:layout_constraintTop_toBottomOf="@+id/SEKtitle" />
+
+    <EditText
+        android:id="@+id/SEKinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:inputType="numberDecimal|numberSigned"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/EURinput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EURinput"
+        app:layout_constraintTop_toBottomOf="@+id/EURinput" />
+
+    <ImageView
+        android:id="@+id/CADimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/cad"
+        app:layout_constraintStart_toStartOf="@+id/SEKimage"
+        app:layout_constraintTop_toBottomOf="@+id/SEKimage" />
+
+    <TextView
+        android:id="@+id/CADtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAD"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/SEKtext"
+        app:layout_constraintTop_toTopOf="@+id/CADimage" />
+
+    <TextView
+        android:id="@+id/CADtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Canadian Dollar"
+        app:layout_constraintStart_toStartOf="@+id/CADtitle"
+        app:layout_constraintTop_toBottomOf="@+id/CADtitle" />
+
+    <EditText
+        android:id="@+id/CADinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:inputType="numberDecimal|numberSigned"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/SEKinput"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/SEKinput"
+        app:layout_constraintTop_toBottomOf="@+id/SEKinput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
